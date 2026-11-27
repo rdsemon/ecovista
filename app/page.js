@@ -1,8 +1,10 @@
+import LocationDetector from "@/components/LocationDetector";
+import { Suspense } from "react";
 function HomePage() {
   return (
-    <div>
-      <h1>Hello next.js</h1>
-    </div>
+    <Suspense fallback={null}>
+      <LocationDetector />;
+    </Suspense>
   );
 }
 
